@@ -1,0 +1,66 @@
+/* ===== Reset básico ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Estilos generales ===== */
+body {
+  font-family: "Noto Serif", serif;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center; /* centra verticalmente */
+  height: 100vh; /* ocupa toda la altura de la pantalla */
+}
+
+/* ===== Contenedor principal (el cuadro verde) ===== */
+.container {
+  border: 3px solid #57b45b; /* borde verde */
+  border-radius: 10px;
+  padding: 40px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center; /* centra el texto dentro */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* fondo blanco dentro del borde verde */
+}
+
+/* ===== Títulos ===== */
+h1 {
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* ===== Formulario ===== */
+.form-section {
+  margin-top: 10px;
+}
+
+.form select {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* ===== Botones (azules con texto blanco) ===== */
+.button,
+.button-secondary {
+  background-color: #28acea; /* nuevo azul */
+  color: white; /* texto blanco */
+  /* resto del estilo que ya tienes */
+}
+
+.button:hover,
+.button-secondary:hover {
+  background-color: #1f85c3; /* azul más oscuro al pasar el ratón */
+}

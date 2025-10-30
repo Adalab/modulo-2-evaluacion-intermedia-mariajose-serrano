@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego Piedra, Papel y Tijera</title>
+
+  <!-- Fuente de Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Enlace al CSS -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!--Enlaceal JS (con defer para que cargue al final) -->
+  <script defer src="/main.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Juego Piedra, Papel y Tijera</h1>
+    </header>
+
+    <main>
+      <section class="form-section">
+        <h2>Introduce aquí tu jugada:</h2>
+        <form class="form">
+          <select id="jugada" required>
+            <option value="">Seleccione su jugada</option>
+            <option value="piedra">Piedra</option>
+            <option value="papel">Papel</option>
+            <option value="tijera">Tijera</option>
+          </select>
+          <button type="button" id="btnJugar" class="button">Jugar</button>
+        </form>
+
+        <button type="button" id="btnReset" class="button-secondary">Vamos a jugar!</button>
+      </section>
+
+      <section class="marcador">
+        <p id="puntosJugador">Jugador: 0</p>
+        <p id="puntosComputadora">Computadora: 0</p>
+      </section>
+    </main>
+
+    <footer class="footer">
