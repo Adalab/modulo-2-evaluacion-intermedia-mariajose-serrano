@@ -1,33 +1,32 @@
-/* ===== Reset básico ===== */
+/* Reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* ===== Estilos generales ===== */
 body {
   font-family: "Noto Serif", serif;
   background-color: #ffffff;
   display: flex;
-  justify-content: center; /* centra horizontalmente */
-  align-items: center; /* centra verticalmente */
-  height: 100vh; /* ocupa toda la altura de la pantalla */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-/* ===== Contenedor principal (el cuadro verde) ===== */
+/* Contenedor principal */
 .container {
-  border: 3px solid #57b45b; /* borde verde */
+  border: 3px solid #57b45b;
   border-radius: 10px;
   padding: 40px;
   max-width: 500px;
   width: 90%;
-  text-align: center; /* centra el texto dentro */
+  text-align: center;
+  background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff; /* fondo blanco dentro del borde verde */
 }
 
-/* ===== Títulos ===== */
+/* Títulos */
 h1 {
   color: #333;
   font-weight: 700;
@@ -40,11 +39,7 @@ h2 {
   margin-bottom: 15px;
 }
 
-/* ===== Formulario ===== */
-.form-section {
-  margin-top: 10px;
-}
-
+/* Formulario */
 .form select {
   padding: 8px;
   font-size: 16px;
@@ -52,15 +47,35 @@ h2 {
   border-radius: 5px;
 }
 
-/* ===== Botones (azules con texto blanco) ===== */
-.button,
-.button-secondary {
-  background-color: #28acea; /* nuevo azul */
-  color: white; /* texto blanco */
-  /* resto del estilo que ya tienes */
+/* Botón */
+.button {
+  background-color: #28acea; /* Azul del ejemplo */
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
-.button:hover,
-.button-secondary:hover {
-  background-color: #1f85c3; /* azul más oscuro al pasar el ratón */
+.button:hover {
+  background-color: #1f85c3;
+  transform: scale(1.03);
+}
+
+/* Resultado */
+.resultado {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  color: #555;
+  font-size: 14px;
 }
